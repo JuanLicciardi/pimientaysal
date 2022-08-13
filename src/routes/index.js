@@ -3,9 +3,9 @@ var router = express.Router();
 
 const {index,detail} = require('../controllers/indexController')
 
-/* GET home page. */
+/* llego como / */
 router
   .get('/', index)
-  .get('/detail',detail)
+  .get('/detail/:id',detail)
 
 module.exports = router;
